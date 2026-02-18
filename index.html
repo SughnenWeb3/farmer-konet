@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrios - Agriculture & Eco Farming</title>
+  <link rel="stylesheet" href="src/style.css">
+  <!-- Basic Icons -->
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+  <!-- Filled Icons -->
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+  <!-- Brand Icons -->
+  <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Doodle+Shadow&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container mx-auto px-4">
+      <div>
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 justify-between py-6">
+          <div class="flex items-center justify-center">
+            <img src="/logo.png" alt="logo">
+          </div>
+          <div class="flex space-x-6 items-center">
+            <div class="flex items-center space-x-4">
+              <span class="bg-[#f8f7f1] py-2 px-2 inline-flex items-center rounded-full">
+                <i class="bxl bx-twitter"></i>
+              </span>
+              <span class="bg-[#f8f7f1] py-2 px-2 inline-flex items-center rounded-full">
+                <i class="bxl bx-facebook-circle"></i>
+              </span>
+              <span class="bg-[#f8f7f1] py-2 px-2 inline-flex items-center rounded-full">
+                <i class="bxl bx-pinterest"></i>
+              </span>
+              <span class="bg-[#f8f7f1] py-2 px-2 inline-flex items-center rounded-full">
+                <i class="bxl bx-instagram"></i>
+              </span>
+            </div>
+            <div class="flex items-center space-x-2 border-r-2 border-[#f8f7f1] px-2">
+              <p>
+                <i class="bx bx-phone-ring text-green-700 text-3xl"></i>
+              </p>
+              <p class="flex flex-col">
+                <span class="text-[#c1c1bf]">call anytime</span>
+                <span>+1342-(9007)-8890</span>
+              </p>
+            </div>
+            <div class="flex items-center space-x-2 border-r-2 border-[#f8f7f1] px-2">
+              <p>
+                <i class="bx bx-mail-open text-green-700 text-3xl"></i>
+              </p>
+              <p class="flex flex-col">
+                <span class="text-[#c1c1bf]">Send mail</span>
+                <span>example@gmail.com</span>
+              </p>
+            </div>
+            <div class="flex items-center space-x-2 px-2">
+              <p>
+                <i class="bx bx-location-alt-2 text-green-700 text-3xl"></i>
+              </p>
+              <p class="flex flex-col">
+                <span class="text-[#c1c1bf]">517 KLd Road</span>
+                <span>Malbourne.Australia</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#f8f7f1] p-6">
+      <div class="mx-auto container px-4 flex justify-between">
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-800 hover:text-green-600 font-medium flex items-center justify-center">
+            Home
+            <i class="bx bx-chevron-down"></i>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-green-600">About</a>
+          <a href="#" class="text-gray-600 hover:text-green-600 flex items-center justify-center">Services <i
+              class="bx bx-chevron-down"></i></a>
+          <a href="#" class="text-gray-600 hover:text-green-600 flex items-center justify-center">Projects <i
+              class="bx bx-chevron-down"></i></a>
+          <a href="#" class="text-gray-600 hover:text-green-600 flex items-center justify-center">News <i
+              class="bx bx-chevron-down"></i></a>
+          <a href="#" class="text-gray-600 hover:text-green-600 flex items-center justify-center">Shop <i
+              class="bx bx-chevron-down"></i></a>
+          <a href="#" class="text-gray-600 hover:text-green-600">Contact</a>
+        </nav>
+        <div class="flex items-center space-x-6 border-l-2 border-[#d2d2d0]">
+          <button class="text-gray-600 hover:text-green-600">
+            <i class="bx bx-search text-3xl ml-8"></i>
+          </button>
+          <button class="text-gray-600 hover:text-green-600 relative">
+            <i class="bx bx-cart-alt text-3xl"></i>
+            <span
+              class="absolute -top-1 right-0 bg-green-600 h-4 p-1 text-white rounded-full inline-flex items-center">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white py-32 min-h-screen bg-cover bg-center bg-no-repeat relative"
+    style="background-image: url('/elements.png');">
+    <div class="absolute bg-black bg-opacity-50"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-2xl">
+        <p class="text-white text-2xl font-sans font-light mb-2">WELCOME TO AGRIOS FARMING</p>
+        <h1 class="text-6xl text-white  mb-6 font-script">Agriculture & <br><span class="font-script font-normal">Eco
+            Farming</span></h1>
+        <p class="text-gray-200 mb-8 text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit sed
+          eiusmod<br>tempor incididunt ut labore et dolore magna aliqua</p>
+        <div class="flex flex-row gap-6 items-center">
+          <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded font-medium transition">
+            Discover More
+          </button>
+          <span>
+            <img src="/elementsrice.png" alt="">
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Cards -->
+  <section class="relative -mt-16 mb-20">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg flex flex-col  justify-center items-center">
+          <p class="text-yellow-300 text-sm mb-4">Feature 01</p>
+          <h3 class="text-xl font-bold mb-2">Why we are the<br>best choice</h3>
+          <div class="w-20 h-20 mb-4">
+            <img src="/container.png" alt="Agriculture" class="w-full h-full">
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg flex flex-col  justify-center items-center">
+          <p class="text-yellow-300 text-sm mb-4">Feature 02</p>
+          <h3 class="text-xl font-bold mb-2">Good in smart<br>agriculture</h3>
+          <div class="w-20 h-20 mb-4">
+            <img src="/image-02.webp.png" alt="Tractor" class="w-full h-full">
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg flex flex-col  justify-center items-center">
+          <p class="text-yellow-300 text-sm mb-4">Feature 03</p>
+          <h3 class="text-xl font-bold mb-2">Marketing in<br>the agriculture</h3>
+          <div class="w-20 h-20 mb-4">
+            <img src="/container.png" alt="Tractor" class="w-full h-full">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Images -->
+        <div class="relative">
+          <div class="rounded-full overflow-hidden w-96 h-96 mx-auto">
+            <img src="/div.elementor-widget-container.png" alt="Farm" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-9 left-10  w-40 h-40 rounded-full overflow-hidden border-8 border-white">
+            <img src="/image-02.webp.png" alt="Team" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+          <p class="text-yellow-300 text-sm font-medium mb-2">ABOUT US</p>
+          <h2 class="text-4xl font-bold mb-4 text-gray-900">Agriculture & Organic<br>Product Farm</h2>
+          <p class="text-green-600 mb-6">Agrios is the largest global organic farm.</p>
+          <p class="text-gray-500 text-sm mb-8">There are many variations of passages of available but the majority have
+            suffered alteration in some form, by injected humou or randomised words even slightly believable.</p>
+
+          <div class="grid grid-cols-2 gap-6 mb-8">
+            <div class="flex items-start space-x-3">
+              <div class="w-12 h-12 bg-yellow-50 rounded-full flex items-center justify-center">
+                <img src="/Icon (1).svg" alt="icon">
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1">Growing fresh<br>vegetables</h4>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <div class="w-12 h-12 bg-yellow-50 rounded-full flex items-center justify-center">
+                <img src="/Icon.svg" alt="icon">
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1">Try for lighting<br>good harvesting</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <p class="text-gray-800"><i class="bxf bx-check-circle text-lime-500"></i> Nullam molestie lacus sit amet
+              velit fermentum feugiat. Mauris auctor eget.</p>
+            <p class="text-gray-800 mt-2"><i class="bxf bx-check-circle text-lime-500"></i> Nullam molestie lacus sit
+              amet velit fermentum feugiat. Mauris auctor eget.</p>
+          </div>
+
+          <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded font-medium transition">
+            Discover More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer Section -->
+  <section class="py-20 bg-[#f8f7f1] relative">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <p class="text-yellow-400 text-sm font-medium mb-2">OUR OFFERS</p>
+        <h2 class="text-4xl font-bold text-gray-900">What We Offer</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 relative">
+        <!-- Product 1 -->
+        <div class="rounded-lg shadow-lg hover:shadow-xl transition">
+          <div>
+            <img src="/images.png" alt="Fresh Fruits" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition">
+          <div>
+            <img src="/images (1).png" alt="Fresh Vegetables" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="rounded-lg shadow-lg hover:shadow-xl transition">
+          <div>
+            <img src="/box.png" alt="Dairy Products" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="rounded-lg shadow-lg hover:shadow-xl transition">
+          <div>
+            <img src="/re.png" alt="Healthy Food" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Bar -->
+  <section class="bg-green-600 px-4 py-14 rounded-lg container mx-auto mt-18 relative z-10">
+    <div>
+      <div class="flex items-center justify-between text-white">
+        <div class="flex items-center space-x-2">
+          <span class="font-medium">Agricultural Products</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span>Projects Completed</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span>Satisfied Clients</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span>Expert Farmers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section relative -mt-8 text-white py-32"
+    style="background-image: url(/4dd8f6821d480a43b8d523b9ec5a686d97d78cca.png); height: 100%; width: 100%; object-fit: cover;">
+    <div class="container flex items-center justify-between mx-auto px-4 py-6">
+      <h2 class="text-7xl font-semibold mb-6 leading-18 font-mo">Agriculture<br>Matters to the<br>Future
+        of<br>Development</h2>
+      <button
+        class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto hover:bg-green-600 transition group">
+        <i class="bx bx-play"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Explore Projects Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <p class="text-yellow-400 text-sm font-medium mb-2">PROJECTS</p>
+        <h2 class="text-4xl font-bold text-gray-900">Explore Projects</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Project 1 -->
+        <div class="relative h-96">
+          <img src="/02ace2cfce66048f81681e9a2e4ad29544f43cca.png" alt="Corn"
+            class="w-full h-full object-cover rounded-lg">
+          <div class="absolute bottom-0 left-0 right-0 from-black/80 to-transparent p-6">
+            <h3 class="text-white text-2xl font-bold">Easy Harvesting</h3>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="relative h-96">
+          <img src="/e8c230eae0ecad4d9a60640233239921f7a02f78.png" alt="Agriculture"
+            class="w-full h-full object-cover rounded-lg">
+          <div class="absolute bottom-0 left-0 right-0 from-black/80 to-transparent p-6">
+            <h3 class="text-white text-2xl font-bold">Agriculture Farming</h3>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="relative h-96">
+          <img src="/e8c230eae0ecad4d9a60640233239921f7a02f78.png" alt="Vegetables"
+            class="w-full h-full object-cover rounded-lg">
+          <div class="absolute bottom-0 left-0 right-0 bg-g from-black/80 to-transparent p-6">
+            <h3 class="text-white text-2xl font-bold">Ecological Farming</h3>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="relative h-96">
+          <img src="/02ace2cfce66048f81681e9a2e4ad29544f43cca.png" alt="Organic"
+            class="w-full h-full object-cover rounded-lg">
+          <div class="absolute bottom-0 left-0 right-0 from-black/80 to-transparent p-6">
+            <h3 class="text-white text-2xl font-bold">Organic Solutions</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Content -->
+        <div>
+          <p class="text-yellow-400 text-sm font-medium mb-2">TESTIMONIALS</p>
+          <h2 class="text-6xl font-bold mb-6 text-gray-900">What They're<br>Talking About<br>Agrios</h2>
+          <p class="text-gray-500 mb-8">There are many variations of passages of available but the majority have
+            suffered alteration in some form, by injected humour or randomised words which don't look even.</p>
+          <button class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded font-medium transition">
+            View All Reviews
+          </button>
+        </div>
+
+        <!-- Testimonial Card -->
+        <div class="bg-white p-8 rounded-lg shadow-lg relative">
+          <p class="text-gray-600">"There are many variations of passages of lorem ipsum available but the
+            majority have suffered alteration in some form by injected humour or randomised words which don't look even
+            slightly believable. If you are going to use passage."</p>
+          <div class="flex items-center justify-between flex-row-reverse">
+            <div class="w-24 h-24 rounded-full border-yellow-400 border-dashed border-2">
+              <div class="flex items-center justify-center">
+                <img src="/image-02.webp.png" alt="" class="w-full h-full rounded-full">
+              </div>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-3xl">Bonnie Tolbet</h4>
+            </div>
+          </div>
+          <div class="flex justify-end relative -mt-4">
+            <button
+              class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-600 hover:text-white transition mr-4">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Image -->
+        <div class="relative">
+          <img
+            src="/elements (1).png"
+            alt="Farm" class="w-full h-full object-cover">
+        </div>
+        <!-- Content -->
+        <div class="p-2">
+          <p class="text-yellow-400 text-sm font-medium mb-2">WHY CHOOSE US</p>
+          <h2 class="text-4xl font-bold mb-6 text-gray-900">Why Choose Agrios<br>Market</h2>
+          <p class="text-gray-500 mb-8 text-lg">There are many variations of passages of available but the majority have
+            suffered alteration in some form by injected humour or randomised words.</p>
+
+          <div class="py-2 space-y-5">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-leaf text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-3xl text-gray-800 mb-2">Quality Organic Food</h4>
+                <p class="text-gray-500 text-lg">We provides always organic and natural products free from chemicals</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-users text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-2 text-3xl">Professional Farmers</h4>
+                <p class="text-gray-500 text-lg">Our team members are experienced and dedicated professionals</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-seedling text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-2 text-3xl">Quality Products</h4>
+                <p class="text-gray-500 text-lg">We ensure that all our products meet the highest quality standards</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="mt-8 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded font-medium transition">
+            Discover More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Articles Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <p class="text-yellow-400 text-sm font-medium mb-2">NEWS & ARTICLES</p>
+        <h2 class="text-4xl font-bold text-gray-900">News & Articles</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Article 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <div class="h-64 overflow-hidden">
+            <img
+              src="/02ace2cfce66048f81681e9a2e4ad29544f43cca.png"
+              alt="Article" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex flex-col text-center">
+              <p class="text-green-50  bg-green-600 font-medium text-sm relative -mt-14 p-4 mx-20 rounded-lg mb-6">05 july 2022</p>
+            <div class="flex justify-center items-center space-x-4 text-sm text-gray-500 mb-3">
+              <span><i class="far fa-user mr-1"></i> Admin</span>
+              <span><i class="far fa-comment mr-1"></i> 2 Comments</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 hover:text-green-600 cursor-pointer">Bringing Food
+              Production Back To Cities</h3>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <div class="h-64 overflow-hidden relative">
+            <img
+              src="/02ace2cfce66048f81681e9a2e4ad29544f43cca.png"
+              alt="Article" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex flex-col text-center">
+             <p class="text-green-50  bg-green-600 font-medium text-sm relative -mt-14 p-4 mx-20 rounded-lg mb-6">05 july 2022</p>
+            <div class="flex items-center justify-center space-x-4 text-sm text-gray-500 mb-3">
+              <span><i class="far fa-user mr-1"></i> Admin</span>
+              <span><i class="far fa-comment mr-1"></i> 2 Comments</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 hover:text-green-600 cursor-pointer">The Future of Farming,
+              Smart Irrigation Solutions</h3>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+          <div class="h-64 overflow-hidden">
+            <img
+             src="/02ace2cfce66048f81681e9a2e4ad29544f43cca.png"
+              alt="Article" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex flex-col text-center">
+             <p class="text-green-50  bg-green-600 font-medium text-sm relative -mt-14 p-4 mx-20 rounded-lg mb-6">05 july 2022</p>
+            <div class="flex items-center justify-center space-x-4 text-sm text-gray-500 mb-3">
+              <span><i class="far fa-user mr-1"></i> Admin</span>
+              <span><i class="far fa-comment mr-1"></i> 2 Comments</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3 hover:text-green-600 cursor-pointer">Agronomy and Relation
+              to Other Sciences</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <!-- Column 1 -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+         <img src="/logo.png" alt="">
+          </div>
+          <p class="text-gray-400 text-sm mb-4">There are many variations of passages of lorem ipsum available but the
+            majority have suffered.</p>
+          <div class="flex space-x-3">
+            <a href="#"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Explore</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-green-600 transition">About</a></li>
+            <li><a href="#" class="hover:text-green-600 transition">Our Products</a></li>
+            <li><a href="#" class="hover:text-green-600 transition">Popular Packages</a></li>
+            <li><a href="#" class="hover:text-green-600 transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">News</h3>
+          <ul class="space-y-4 text-gray-50">
+            <li>
+              <p class="font-bold text-lg">Bringing food production <br> Back to cities</p>
+              <p class="text-yellow-400">July 5 2022</p>
+            </li>
+             <li>
+              <p class="font-bold text-lg mt-4">The future of farming <br> Smart irrigations solution</p>
+              <p class="text-yellow-400">July 5 2022</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact</h3>
+          <div class="space-y-4 text-gray-400 text-sm">
+            <div class="flex items-start space-x-3">
+              <i class="fas fa-map-marker-alt text-green-600 mt-1"></i>
+              <span>88 Road, Brooklyn Street,<br>New York 1001</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-phone-alt text-green-600"></i>
+              <span>+8 (800) 234 56 78</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-green-600"></i>
+              <span>needhelp@agrios.com</span>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <div class="flex">
+              <input type="email" placeholder="Email Address"
+                class="flex-1 px-4 py-4 text-gray-950 rounded-l bg-gray-50 text-sm focus:outline-0">
+              <button class="bg-green-600 hover:bg-green-700 px-4 py-4 rounded-r transition">
+                <i class="bx bx-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+        <p>© Copyright 2024 by Agrios.com</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-green-600 transition ">Terms of use</a>
+          <a href="#" class="hover:text-green-600 transition">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
