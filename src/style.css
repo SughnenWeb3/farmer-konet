@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+/* Mobile Menu Styles */
+#mobile-nav-menu {
+  transition: max-height 0.3s ease-in-out;
+}
+
+#mobile-nav-menu.hidden {
+  max-height: 0;
+  overflow: hidden;
+}
+
+#mobile-nav-menu:not(.hidden) {
+  max-height: 500px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+  }
+  
+  .video-section {
+    background-attachment: scroll;
+  }
+}
+
+/* Better mobile touch targets */
+@media (max-width: 640px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix for background overlay */
+.hero-section .absolute {
+  inset: 0;
+}
